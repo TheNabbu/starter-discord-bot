@@ -159,10 +159,10 @@ const port = 7600;
 var websitePass = process.env.password || config.password;
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/website/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 app.get("/balance", (req, res) => {
-  res.sendFile(__dirname + "/website/bal.html");
+  res.sendFile(__dirname + "/bal.html");
 });
 
 // app.get("/api/update", (req, res) => {
